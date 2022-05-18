@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<node>
+    <interface name="org.example.Calculator">
+        <method name="Addition">
+            <arg direction="in" name="value1" type="i" />
+            <arg direction="in" name="value2" type="i" />
+            <arg direction="out" name="return" type="i" />
+        </method>
+        <method name="Subtraction">
+            <arg direction="in" name="value1" type="i" />
+            <arg direction="in" name="value2" type="i" />
+            <arg direction="out" name="return" type="i" />
+        </method>
+        <method name="Multiplication">
+            <arg direction="in" name="value1" type="i" />
+            <arg direction="in" name="value2" type="i" />
+            <arg direction="out" name="return" type="i" />
+        </method>
+        <method name="Division">
+            <arg direction="in" name="value1" type="i" />
+            <arg direction="in" name="value2" type="i" />
+            <arg direction="out" name="return" type="i" />
+        </method>
+        <method name="Dolar">
+            <arg direction="out" name="return" type="s" />
+        </method>
+    </interface>
+</node>

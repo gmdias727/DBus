@@ -8,6 +8,7 @@ authors = ["Gabriel Dias Mazieri <gabrieldias7200@gmail.com>"]
 python = "^3.10"
 dasbus = "^1.6"
 PyGObject = "^3.42.1"
+beautifulsoup4 = "^4.11.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
