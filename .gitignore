@@ -134,7 +134,3 @@ thumbs/
 
 # Files
 pyvenv.cfg
-
-# imgs
-*.jpg
-*.png
