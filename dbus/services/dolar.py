@@ -1,14 +1,12 @@
 from bs4 import *
-from requests import *
+import requests
 
 def DolarHoje():
     url = 'https://dolarhoje.com/'
-    html = get(url)
+    html = requests.get(url)
     
     element = BeautifulSoup(
         html.content, 'html.parser'
     )
     
-# TODO: ta faltando uma função aqui
-
     return element.find(id='nacional').get('value')

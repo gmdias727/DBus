@@ -1,9 +1,34 @@
-from services.dolar import DolarHoje
-file_handler = open("/home/hansolo/a/pdbus-demo/dasbus/services/org.example.HelloWorld.xml", "r")
+from dbus.services.dolar import DolarHoje
+from pathlib import Path 
+import time
+from halo import Halo
 
-xml = file_handler.read()
-# print(type(file_handler))
-# print(type(xml))
+import os
+
+BASE_DIR = Path(__file__).parent.parent
+
+print(f'printando!!! {BASE_DIR}')
+
+spinner = Halo(
+    spinner='dots12',
+    text_color='magenta',
+    placement='right',
+)
+
+spinner.start(text='Service is running')
+time.sleep(2)
+
+opening_file = open(BASE_DIR/'data/org.example.HelloWorld.xml', "r")
+
+
+if(os.path.exists(BASE_DIR/'data/org.example.HelloWorl.xml') == False):
+    spinner.fail(text="The provided file doesn't exists...")
+    spinner.stop()
+    time.sleep(2)
+    
+xml = opening_file.read()
+spinner.succeed(text='Reading provided XML file...')
+time.sleep(2)
 
 from dasbus.loop import EventLoop
 loop = EventLoop()
@@ -28,13 +53,10 @@ class Calculator(object):
     
     def Dolar(self):
         return DolarHoje()
-    
+
 
 session_bus.publish_object("/org/example/Calculator", Calculator())
 session_bus.register_service("org.example.Calculator")
-print('SERVIÇO DBUS RODANDO!')
-print('SERVIÇO DBUS RODANDO!')
-print('SERVIÇO DBUS RODANDO!')
-print('SERVIÇO DBUS RODANDO!')
-print('SERVIÇO DBUS RODANDO!')
+
 loop.run()
+spinner.stop()
