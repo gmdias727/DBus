@@ -21,8 +21,5 @@
             <arg direction="in" name="value2" type="i" />
             <arg direction="out" name="return" type="i" />
         </method>
-        <method name="Dolar">
-            <arg direction="out" name="return" type="s" />
-        </method>
     </interface>
 </node>

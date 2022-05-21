@@ -1,5 +1,5 @@
-## Custom Services on Linux OS's
-### Using python and D-Bus
+## Custom Services on UNIX operating systems
+### Creating custom UNIX services using Dasbus
 
 <br/>
 
@@ -12,6 +12,8 @@
 - PyGObject ^3.42.1
 - Poetry ^1.1.13
 - Beautifulsoup4 ^4.11.1
+- Requests ^2.27.1
+- Halo ^0.0.31
 
 <br/>
 
@@ -98,7 +100,17 @@ This command activates our virtual environment so we're able to run the app with
 
 
 Now we can run the app
-<!-- 
 
-### Authors:
-Gabriel Dias Mazieri -->
+
+Authors of used libraries:
+
+M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
+"Building a framework for predictive science", Proceedings of
+the 10th Python in Science Conference, 2011;
+http://arxiv.org/pdf/1202.1056
+
+Michael McKerns and Michael Aivazis,
+"pathos: a framework for heterogeneous computing", 2010- ;
+https://uqfoundation.github.io/project/pathos
+
+

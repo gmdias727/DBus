@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<node>
+    <interface name="dollar.quote.DollarToday">
+        <method name="TodaysDollarToBRL">
+            <arg direction="out" name="return" type="s" />
+        </method>
+    </interface>
+</node>
