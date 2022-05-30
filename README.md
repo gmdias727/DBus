@@ -104,6 +104,10 @@ Now we can run the app
 
 Authors of used libraries:
 
+Dasbus Creator - Vendula Poncova - GitHub: [poncovka](https://github.com/poncovka)
+
+Dasbus Co-Creator - Woodrow Douglass - Github: [wdouglass](https://github.com/wdouglass)
+
 M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
 "Building a framework for predictive science", Proceedings of
 the 10th Python in Science Conference, 2011;
