@@ -101,12 +101,17 @@ This command activates our virtual environment so we're able to run the app with
 
 Now we can run the app
 
+D-Bus Authors:
+- Havoc Pennington, Red Hat, Inc.
+- Alexander Larsson, Red Hat, Inc.
+- Anders Carlsson, CodeFactory AB.
+- Sven Herzberg, Imendio AB.
+- Simon McVittie, Collabora Ltd.
+- David Zeuthen.
 
-Authors of used libraries:
-
-Dasbus Creator - Vendula Poncova - GitHub: [poncovka](https://github.com/poncovka)
-
-Dasbus Co-Creator - Woodrow Douglass - Github: [wdouglass](https://github.com/wdouglass)
+Authors of Dasbus:
+* Dasbus Creator - Vendula Poncova - GitHub: [poncovka](https://github.com/poncovka)
+* Dasbus Co-Creator - Woodrow Douglass - Github: [wdouglass](https://github.com/wdouglass)
 
 M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
 "Building a framework for predictive science", Proceedings of
